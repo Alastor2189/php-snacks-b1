@@ -20,7 +20,7 @@
     ?>
 
     <?php
-    if (strlen($name) > 3 && strpos($mail, '.') && strpos($mail, '@') && ctype_digit($age)) {
+    if (strlen($name) > 3 && strpos($mail, '.') && strpos($mail, '@') && is_numeric($age)) {
         echo "Accesso riuscito";
     } else {
         echo "Accesso negato";
